@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="viewport" content="width:device-width, indent-scale=1.0">
+<title>HTML - Model1</title>
+
+<link href="css/include_css.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<script language="javascript" src="javascript/java_validate.js"></script>
+
+</head>
+
+<body>
+
+	<!----------Header  Start Here ------------->
+
+<div id="header_panel">
+
+		<div id="head_logo">
+			<a href="index.html">
+			  <img src="images/logo.jpg" alt="logo"title="Goto Home"/>
+			</a>
+		</div>
+		
+		<div id="header_det">
+			<div class="head_font1">Chennai Export and Import Company</div>
+			<div class="head_font2" style="margin-top:5px;">Chennai, Puducherry and Villupuram</div>
+			
+		</div>
+		
+
+
+</div>
+
+	<!----------Header  End Here ------------->
+	
+	<!----------Menu  Start Here ------------->
+	<div id="menu_cont">
+	
+			<ul>
+			
+					<li>
+                                            <a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+					<li><a href="service.html">Services</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="agency.html">Agency</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+			
+			
+			</ul>
+	
+	</div>
+	
+	<!----------Menu  End Here ------------->
+	
+	<!----------Container  Start Here ------------->
+	
+	<div id="cont_wrapper">
+	
+			<div id="cont_lft">
+			  
+			</div>
+	
+			<div id="cont_rght">
+           		  <h2 id="headin_rt">Contact Us</h2>	
+          <form id="table">	
+			<table width="75%" align="center" border="1" id="table" style="border-collapse:collapse; font-size:12px; font-family:Arial, Helvetica, sans-serif; 							border:#FFFFFF 1px solid; ">
+					
+					<tr>
+					
+						<td colspan="3" class="td_head"> Enquiry Form</td>
+					
+					</tr>
+				
+					<tr class="td_odd">
+						<td width="35%">First Name : </td>
+						<td width="27%"><input type="text" name="f_name" id="f_name"></td>
+						<td width="38%"><span id="err_fname" class="err_txt"></span></td>
+					
+					</tr>
+					
+					<tr class="td_even">
+						<td>Last Name : </td>
+						<td><input type="text" name="l_name" id="l_name"></td>
+						<td><span id="err_lname" class="err_txt"></span></td>
+						
+						
+					
+					</tr>
+					
+					
+					<tr>
+						<td>Email : </td>
+						<td><input type="text" name="e_mail" id="e_mail"></td>
+						<td><span id="err_email" class="err_txt" ></span></td>
+					
+					</tr><tr id="q">
+						<td>Qualification: </td>
+						<td id="qualification"><select  name="qual" id="qual" size="3" multiple>
+							<option value="B.E EEE">B.E EEE</option>
+							<option value="B.E ECE">B.E ECE</option>
+							<option value="B.E E&I">B.E E&I</option>
+							<option value="M.E EEE">M.E EEE</option>
+							<option value="M.E ECE">M.E ECE</option>
+							<option value="M.E E&I">M.E E&I</option>
+							<option value="B.Tech">B.Tech</option>
+							<option value="M.Tech">M.Tech</option>
+							<option value="B.sc CS">Bsc CS</option>
+							<option value="B.sc physics">Bsc physics</option>
+							<option value="B.sc maths">Bsc maths</option>
+							<option value="M.sc CS">msc CS</option>
+							<option value="B.sc physics">Msc physics</option>
+							<option value="B.sc maths">Msc maths</option>
+							</select><br>
+						     <input type="text" id="q_write" readonly>
+						</td>
+						<td><span id="err_qual" class="err_txt"></span></td>
+					
+					</tr>
+					<tr>
+						<td>mobile : </td>
+						<td><input type="text" name="mob_num" id="mob_num" maxlength=10;></td>
+						<td><span id="err_mob" class="err_txt"></span></td>
+					
+					</tr><tr>
+						<td>city: </td>
+						<td><select  name="city" id="city">
+							<option value="">--none--</option>
+							<option value="chennai">chennai</option>
+							<option value="mumbai">mumbai</option>
+							<option value="bangalore">bangalore</option>
+						</td>
+						<td><span id="err_city" class="err_txt"></span></td>
+					
+					</tr><tr>
+						<td>Address : </td>
+						<td><textarea name="addr" id="addr" rows="5" cols="30" maxlength="60" ></textarea></td>
+						<td><span id="err_add" class="err_txt"></span></td>
+					</tr>
+					<tr>
+						<td>web : </td>
+						<td><input type="text" name="url" id="url"></td>
+						<td><span id="err_url" class="err_txt"></span></td>
+					
+					</tr>
+					
+
+					<tr>
+						<td> gender: </td>
+     					<td><input type="radio" name="gender" id="gen_m" value="" 
+onclick="male();">&nbsp;male<input type="radio" name="gender" id="gen_f" value="" onclick="female();">&nbsp;female
+
+						</td>
+						<td><span id="err_gen" class="err_txt"></span></td>
+					
+					</tr>
+					
+					<tr>
+					<td colspan="3"><div id="but_css" style="margin-left:35%; float:left;" onclick="frm_valid();">SAVE</div>
+					
+					<div id="but_css" style="margin-left:5%; float:left;" onclick="frm_reset();">RESET</div>
+					
+					</td>
+					</tr>
+					
+					<tr>
+					<td colspan="3"><span id="err_all" class="err_txt" style="text-align:center;"></span></td>
+					</tr><tr>
+				<td colspan="3">
+				<p name="check" id="check"  style="display:none">
+					first name:<span id="fn">    </span><br>
+					lastname:<span id="ln">    </span><br>
+					Email:<span id="em">    </span><br>
+					Qualification:<span id="ql">    </span><br>
+					Mobile:<span id="mb">    </span><br>
+					City:<span id="ct">    </span><br>
+					Address:<span id="ad">    </span><br>
+					Web:<span id="wb">    </span><br>
+					Gender:<span id="gn">    </span><br>
+				</p>
+				</td>
+				</tr>
+				</table>
+					
+                       </form>
+			
+                        </div>
+	
+	</div>
+	
+	<!----------Container  End Here ------------->
+	
+	<!----------Footer  Start Here ------------->
+	
+	<div id="footer_cont" class="footer_css">Powerd by Chennai Export and Import Company - Puducherry</div>
+	
+	<!----------Footer  End Here ------------->
+</body>
+</html>
